@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+/*Foglio di stile CSS*/
+
+body {
+  background-color: #eaedfa; 
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.header {
+  padding: 20px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #010034;
+  display: flex;
+  justify-content: center;
+  z-index: 1000; 
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2px 30px;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+.title {
+  padding: 40px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: #b8c1e1; 
+  padding: 20px;
+}
+
+.wrapper {
+  padding: 0 70px;  
+}
+
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+.table-list {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.cell-list {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* Stile per la galleria di immagini */
+.galleria {
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+
+/* Stile per la legenda */
+#legend-section {
+  position: sticky;
+  top: 50%;
+  right: 0;
+  width: 200px;
+  background-color: #010034;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+}
+
+
+
+/* Stile per ogni riga delle opzioni */
+.opzione {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Stile per gli input delle checkbox */
+.opzione input[type="checkbox"] {
+  vertical-align: middle;
+  margin-left: 10px;
+  
+}
+
+/* Stile per il testo accanto alle checkbox */
+.opzione label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*Stile per i bottoni della galleria*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 40px;
+  background-color: #010034;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.7;
+}
+
+.pages {
+  margin-top: 20px;
+  line-height: 1.6;
+  padding-left: 70px; 
+}
+
+.date {
+  padding: 130px; 
+}
+
+
+.cell-list-value p:last-child {
+  margin-bottom: 0;
+}
+
+.row-list:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.pages h3 {
+  text-align: left; 
+}
+
+#persone h3{
+  text-align: left;
+}
+
+#footer {
+  background-color: #010034;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 10px;
+}
+
+

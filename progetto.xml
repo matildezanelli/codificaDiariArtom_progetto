@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?> 
+
+<!-- Filename:progetto.xml
+    Author: Matilde Zanelli
+    Date: 2024-07 -->
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader> <!--teiHeader, informazioni sul manoscritto e sulla codifica-->
+        <fileDesc>
+            <titleStmt> 
+                <title xml:lang="it"> Diari di Emanuele Artom </title>
+                <author ref="#EA"> Emanuele Artom </author>
+            </titleStmt>
+            <editionStmt>
+                <edition> Edizione digitale
+                </edition>
+                <respStmt> 
+                    <resp> Progetto realizzato per l'esame di Codifica di Testi, cordinato da </resp> 
+                    <name xml:id="AMDG"> Angelo Mario Del Grosso </name>                                         
+                </respStmt>
+                <respStmt>  
+                    <resp> Codifica a cura di </resp>
+                    <name xml:id="MZ"> Matilde Zanelli </name> 
+                </respStmt>
+            </editionStmt>
+            <publicationStmt> 
+                <publisher ref="#Unipi"> Università di Pisa </publisher>
+                <availability status="free"> <p> Opera ad accesso libero </p> </availability>
+                    <date when="2024-07"> Luglio 2024 </date>
+            </publicationStmt>
+            <sourceDesc> 
+                <msDesc> 
+                    <msIdentifier> 
+                        <country key="IT"> Italia </country>
+                        <settlement> Milano </settlement>
+                        <repository role="institute" xml:lang="it" ref="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/Fondo+Emanuele+Artom.html"><orgName ref="#CDEC"> Centro di Documentazione Ebraica Contemporanea</orgName> </repository>
+                        <collection> Fondo Emanuele Artom </collection>
+                        <idno type="inventory">	b. 1, fasc. 9 </idno>
+                    </msIdentifier>
+                    <msContents> 
+                        <msItem> 
+                            <author xml:lang="it"><persName ref="#EA"> Emanuele Artom </persName></author>
+                            <title xml:lang="it"> Diario di Emanuele Artom </title>
+                            <textLang mainLang="it"> Italiano </textLang>
+                        </msItem>
+                    </msContents>
+                    <physDesc> 
+                        <objectDesc>
+                            <supportDesc material="paper" source="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html"> <!-- descrive il supporto fisico del manoscritto -->
+                                <support> 
+                                    <material> Fogli di carta </material>
+                                </support>    
+                                <extent> Il manoscritto è composto da <num>171</num> pagine di diario scritte da <persName ref="#EA"> Emanuele Artom </persName> 
+                                e un'introduzione di <num>2</num> pagine scritta dalla madre <persName ref="#AS"> Amalia Segre</persName> 
+                                </extent>
+                                <condition> 
+                                    <p> Le pagine del diario sono ben conservate, ad eccezzione di alcuni passaggi sbiaditi che risultano leggibili con più difficoltà </p>
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="2"> 
+                            <handNote>
+                                <p> Il diario è stato scritto da <persName ref="#EA"> Emanuele Artom </persName></p>
+                            </handNote>
+                            <handNote>
+                                <p>L'introduzione del manoscritto è costituita da un'epigrafe scritta dalla madre, <persName ref="#AS"> Amalia Segre</persName></p>
+                            </handNote>
+                        </handDesc>
+                        <typeDesc> 
+                            <p> Il diario risulta scritto principalmente a matita, ad eccezione di alcune pagine scritte con l'inchiostro </p>                     
+                        </typeDesc>
+                    </physDesc>
+                    <history> 
+                        <origin>
+                            <p>La seconda parte dei diari è stata scritta nel periodo compreso tra il <date when="1943-11">novembre 1943</date> e il <date when="1944-02">febbraio 1944</date></p>                      
+                        </origin>
+                        <acquisition>
+                            <p> 
+                            I diari di <persName ref="#EA">Emanuele Artom </persName> sono state donati alla Fondazione <orgName ref="#CDEC"> CDEC </orgName> per volontà della madre <persName ref="#AS"> Amalia Segre </persName>
+                            </p>
+                        </acquisition>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Questo progetto di codifica è stato svolto per l'esame di Codifica di Testi. La trascrizione riportata rimane fedele al testo, eventuali scelte di codifica sono consultabili grazie alla legenda.</p>
+            </projectDesc>
+            <editorialDecl>
+                <correction>
+                    <p> Gli errori presenti nelle pagine codificate sono stati indicati mediante i tag &lt;sic&gt; e &lt;corr&gt;. Le parole concellate e poi sostituite sono state codificate mediante i tag &lt;del&gt; e &lt;add&gt;, mentre &lt;gap&gt; è stato utilizzato quando le parole cancellate non erano leggibili.</p>
+                </correction>
+                <punctuation>
+                    <p> La punteggiatura è stata codificata mediante il tag &lt;pc&gt;.</p>
+                </punctuation>
+                <segmentation>
+                    <p> Le parole con ritorno a capo sono state codificate con il tag &lt;w&gt;.</p>
+                </segmentation>
+                <interpretation>
+                    <p> Le parole abbreviate rilevate nel testo sono state indicate tramite il tag &lt;abbr&gt;. Gli elementi che sono stati aggiunti nel processo di codifica sono indicati con il tag &lt;supplied&gt;.</p>
+                </interpretation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage> 
+                <language ident="it">Italiano</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <!--Facsimile-->
+    <facsimile> 
+        <surface n="1" xml:id="p128">
+            <graphic url='128.jpg' width='777.4px' height='1024.4px' />
+                <zone n="0" ulx="103" uly="81" lrx="718" lry="139" />
+                <zone n="1" ulx="101" uly="126" lrx="728" lry="176" />
+                <zone n="2" ulx="100" uly="165" lrx="731" lry="216" />
+                <zone n="3" ulx="102" uly="205" lrx="735" lry="251" />
+                <zone n="4" ulx="98" uly="245" lrx="715" lry="287" />
+                <zone n="5" ulx="79" uly="274" lrx="711" lry="331" />
+                <zone n="6" ulx="95" uly="321" lrx="708" lry="361" />
+                <zone n="7" ulx="95" uly="367" lrx="670" lry="407" />
+                <zone n="8" ulx="90" uly="394" lrx="347" lry="435" />
+                <zone n="9" ulx="99" uly="434" lrx="723" lry="482" />
+                <zone n="10" ulx="99" uly="476" lrx="718" lry="525" />
+                <zone n="11" ulx="100" uly="510" lrx="675" lry="549" />
+                <zone n="12" ulx="99" uly="546" lrx="721" lry="601" />
+                <zone n="13" ulx="98" uly="589" lrx="695" lry="635" />
+                <zone n="14" ulx="104" uly="630" lrx="690" lry="673" />
+                <zone n="15" ulx="105" uly="666" lrx="702" lry="704" />
+                <zone n="16" ulx="96" uly="704" lrx="695" lry="746" />
+                <zone n="17" ulx="101" uly="740" lrx="681" lry="780" />
+                <zone n="18" ulx="104" uly="783" lrx="691" lry="826" />
+                <zone n="19" ulx="103" uly="820" lrx="661" lry="861" />
+                <zone n="20" ulx="103" uly="857" lrx="677" lry="903" />
+                <zone n="21" ulx="103" uly="898" lrx="675" lry="941" />
+        </surface>
+        <surface n="2" xml:id="p129">
+            <graphic url='129.jpg' width='751.4px' height='1024.4px' />
+                <zone n="0" ulx="77" uly="23" lrx="713" lry="65" />
+                <zone n="1" ulx="81" uly="53" lrx="685" lry="93" />
+                <zone n="2" ulx="46" uly="69" lrx="161" lry="98" />
+                <zone n="3" ulx="81" uly="87" lrx="641" lry="134" />
+                <zone n="4" ulx="82" uly="120" lrx="656" lry="171" />
+                <zone n="5" ulx="81" uly="166" lrx="646" lry="212" />
+                <zone n="6" ulx="82" uly="204" lrx="675" lry="254" />
+                <zone n="7" ulx="86" uly="241" lrx="651" lry="293" />
+                <zone n="8" ulx="84" uly="276" lrx="627" lry="325" />
+                <zone n="9" ulx="80" uly="324" lrx="665" lry="378" />
+                <zone n="10" ulx="79" uly="357" lrx="691" lry="412" />
+                <zone n="11" ulx="83" uly="395" lrx="667" lry="449" />
+                <zone n="12" ulx="75" uly="436" lrx="679" lry="482" />
+                <zone n="13" ulx="86" uly="477" lrx="614" lry="521" />
+                <zone n="14" ulx="79" uly="522" lrx="611" lry="564" />
+                <zone n="15" ulx="84" uly="556" lrx="639" lry="601" />
+                <zone n="16" ulx="75" uly="593" lrx="635" lry="645" />
+                <zone n="17" ulx="81" uly="632" lrx="627" lry="681" />
+                <zone n="18" ulx="83" uly="668" lrx="613" lry="710" />
+                <zone n="19" ulx="78" uly="716" lrx="628" lry="761" />
+                <zone n="20" ulx="76" uly="741" lrx="678" lry="807" />
+                <zone n="21" ulx="74" uly="782" lrx="631" lry="836" />
+                <zone n="22" ulx="78" uly="821" lrx="621" lry="873" />
+                <zone n="23" ulx="79" uly="869" lrx="690" lry="926" />
+                <zone n="24" ulx="79" uly="907" lrx="618" lry="954" />
+        </surface>
+        <surface n="3" xml:id="p150">
+            <graphic url='150.jpg' width='742.4px' height='1024.4px' />
+                <zone n="0" ulx="76" uly="61" lrx="646" lry="102" />
+                <zone n="1" ulx="75" uly="98" lrx="648" lry="140" />
+                <zone n="2" ulx="78" uly="130" lrx="655" lry="169" />
+                <zone n="3" ulx="70" uly="153" lrx="647" lry="201" />
+                <zone n="4" ulx="72" uly="187" lrx="631" lry="224" />
+                <zone n="5" ulx="75" uly="209" lrx="655" lry="257" />
+                <zone n="6" ulx="78" uly="244" lrx="636" lry="285" />
+                <zone n="7" ulx="77" uly="273" lrx="655" lry="309" />
+                <zone n="8" ulx="78" uly="303" lrx="633" lry="336" />
+                <zone n="9" ulx="75" uly="329" lrx="651" lry="366" />
+                <zone n="10" ulx="81" uly="357" lrx="643" lry="401" />
+                <zone n="11" ulx="82" uly="389" lrx="635" lry="422" />
+                <zone n="12" ulx="79" uly="416" lrx="673" lry="460" />
+        </surface>
+    </facsimile>
+    
+    <!--Inizio codifica delle pagine di diario-->
+    <text xml:lang="it" xml:id="p_128_129_150" subtype="diario">  
+        <body>
+            <div type="pagina" facs="128" n="128">
+                <ab xml:id="trentadicembreuno">
+                <pb n="128" facs="128.jpg"/>
+                <lb xml:id="pag128_r1" n="1" facs="#p128_r1"/>
+                voleva usare i gas<pc>.</pc> L’armistizio
+                <lb xml:id="pag128_r2" n="2" facs="#p128_r2"/>
+                firmato<pc>,</pc> la pace per il 
+                <list>
+                    <item>
+                        <date when="--01-01">1 gennaio</date>
+                    </item>
+                </list><supplied reason="punteggiatura" resp="#MZ"><pc>.</pc></supplied>                
+                <lb xml:id="pag128_r3" n="3" facs="#p128_r3"/>
+                Ci addormentammo quasi subito
+                <lb xml:id="pag128_r4" n="4" facs="#p128_r4"/>
+                perché i letti <del rend="overstrike">buoni</del> hanno questo
+                <lb xml:id="pag128_r5" n="5" facs="#p128_r5"/>
+                inconveniente per chi ha dormito
+                <lb xml:id="pag128_r6" n="6" facs="#p128_r6"/> 
+                <del rend="overstrike">male</del> sulla paglia per una settimana intera<pc>:</pc>
+                <lb xml:id="pag128_r7" n="7" facs="#p128_r7"/>
+                quanto più sono <subst><del rend="overstrike">buoni</del><add place="supralinear"> soffici e caldi</add></subst><pc>,</pc> tanto meno
+                <lb xml:id="pag128_r8" n="8" facs="#p128_r8"/>
+                si ha il tempo
+                <lb xml:id="pag128_r9" n="9" facs="#p128_r9"/>
+                di goderli<pc>.</pc>
+                <lb xml:id="pag128_r10" n="10" facs="#p_r10"/>
+                Stamane a letto si è discusso come pas<w rend="hyphen">=</w>
+                <lb xml:id="pag128_r11" n="11" facs="#p128_r11"/>
+                sare  il Capodanno<pc>.</pc> Ci hanno invitato
+                <lb xml:id="pag128_r12" n="12" facs="#p128_r12"/> 
+                ad <placeName>Agliasco</placeName><pc>,</pc> ma vorremmo andare
+                <lb xml:id="pag128_r13" n="13" facs="#p128_r13"/> 
+                a <abbr type="geographic">T.P</abbr><expan>T.P (luogo)</expan> a litigare con i capi del <placeName><choice resp="#MZ"><abbr type="organisation">P. d'A.</abbr><expan>Partito d'Azione</expan></choice></placeName>
+                <lb xml:id="pag128_r14" n="14" facs="#p128_r14"/>
+                Mangiare il panettone <gap reason="erasure"  quantity="2" unit="word"/> o fare
+                <lb xml:id="pag128_r15" n="15" facs="#p128_r15"/>
+                casino<pc>?</pc> Si chiede <abbr type="person">G.</abbr><expan>G. (nome di persona)</expan> e sceglie la se<w rend="hyphen">=</w>
+                <lb xml:id="pag128_r16" n="16" facs="#p128_r16"/>
+                conda<pc>.</pc>  Alle proteste già altre volte
+                <lb xml:id="pag128_r17" n="17" facs="#p128_r17"/> 
+                scritte aggiungeremo che non è vero
+                <lb xml:id="pag128_r18" n="18" facs="#p128_r18"/>
+                che curano l’educazione politica<pc>,</pc>
+                <lb xml:id="pag128_r19" n="19" facs="#p128_r19"/> 
+                come si vantano di fare quando lamen<w rend="hyphen">=</w> 
+                <lb xml:id="pag128_r20" n="20" facs="#p128_r20"/>
+                tiamo  inattività bellica<pc>,</pc> perché <abbr type="person">G.</abbr><expan>G. (nome di persona)</expan>
+                <lb xml:id="pag128_r21" n="21" facs="#p128_r21"/> 
+                vide a <placeName>Oncino</placeName> due dei loro sciatori
+                <lb xml:id="pag128_r22" n="22" facs="#p128_r22"/>
+                politicamente negativi<pc>,</pc> che man
+                </ab>
+            </div>
+
+            <div type="pagina" facs="129" n="129">
+                <ab xml:id="trentadicembredue">
+                <pb n="129" facs="129.jpg"/>
+                <lb xml:id="pag129_r1" n="1" facs="#p129_r1"/> 
+                Si contava di costruire a <abbr type="geographic">T.P</abbr><expan>T.P (luogo)</expan> una nuova
+                <lb xml:id="pag129_r2" n="2" facs="#p129_r2"/>
+                banda portando gli elementi migliori di  
+                <lb xml:id="pag129_r3" n="3" facs="#p129_r3"/>
+                questa e
+                <lb xml:id="pag129_r4" n="4" facs="#p129_r4"/>
+                <choice resp="#MZ"><sic>Si</sic><corr resp="#MZ">si</corr></choice> diceva <supplied reason="discorso diretto" resp="#MZ"><pc>&quot;</pc></supplied>Forse per la strada ci
+                <lb xml:id="pag129_r5" n="5" facs="#p129_r5"/> 
+                fermeranno i fascisti<pc>.</pc> Arriveremo
+                <lb xml:id="pag129_r6" n="6" facs="#p129_r6"/>
+                a vedere il <date when="1944">1944</date><supplied reason="discorso diretto" resp="#MZ"><pc>&quot;</pc></supplied><pc>.</pc> Ci arrivammo 
+                <lb xml:id="pag129_r7" n="7" facs="#p129_r7"/>
+                perché <persName>Peru</persName> aveva dato un falso al<w rend="hyphen">=</w>
+                <lb xml:id="pag129_r8" n="8" facs="#p129_r8"/> 
+                larme<pc>,</pc> ingigantendo con la sua
+                <lb xml:id="pag129_r9" n="9" facs="#p129_r9"/> 
+                fantasia atterrita la notizia di
+                <lb xml:id="pag129_r10" n="10" facs="#p129_r10"/>
+                perquisizioni a <placeName>Bagnolo</placeName><pc>.</pc> Si prese
+                <lb xml:id="pagi129_r11" n="11" facs="#p129_r11"/>
+                un po’ di latte da <persName><forename>Pina</forename></persName> e si andò
+                <lb xml:id="pag129_r12" n="12" facs="#p129_r12"/>
+                a <del rend="overstrike">letto</del> dormire nell’enorme letto di <persName><forename>Fiam<w rend="hyphen">=</w>
+                <lb xml:id="pag129_r13" n="13" facs="#p129_r13"/>
+                metta</forename></persName>, ma si riposò male<pc>,</pc> poche
+                <lb xml:id="pag129_r14" n="14" facs="#p129_r14"/>
+                ore<pc>.</pc> Eravamo eccitati dalla
+                <lb xml:id="pag129_r15" n="15" facs="#p129_r15"/>
+                simpamina presa per vincere la
+                <lb xml:id="pag129_r16" n="16" facs="#p129_r16"/> 
+                stanchezza e preoccupati<pc>:</pc> <abbr type="person">G.</abbr><expan>G. (nome di persona)</expan> per  
+                <lb xml:id="pag129_r17" n="17" facs="#p129_r17"/> 
+                aver <del rend="overstrike">al</del> lasciato <persName>Zama</persName> nella
+                <lb xml:id="pag129_r18" n="18" facs="#p129_r18"/>
+                gelida baita<pc>,</pc> solo<pc>,</pc> io perché
+                <lb xml:id="pag129_r19" n="19" facs="#p129_r19"/> 
+                temevo che i <placeName><choice resp="#MZ"><abbr type="person">Ted</abbr><expan>tedeschi</expan></choice></placeName> arrivassero in
+                <lb xml:id="pag129_r20" n="20" facs="#p129_r20"/> 
+                infermeria e trovassero la mia
+                <lb xml:id="pag129_r21" n="21" facs="#p129_r21"/> 
+                borsa piena di carte compromettenti<pc>:</pc>
+                <lb xml:id="pag129_r22" n="22" facs="#p129_r22"/>
+                documenti da dare ad <persName><forename>Antonio</forename></persName> e 
+                <lb xml:id="pag129_r23" n="22" facs="#p129_r23"/>
+                a <persName>Barbato</persName> e questo diario<pc>;</pc> mi 
+                <lb xml:id="pag129_r24" n="24" facs="#p129_r24"/>
+                giravo <gap reason="erasure"  quantity="1" unit="word"/> tra le lenzuola dicendo
+                <lb xml:id="pag129_r25" n="25" facs="#p129_r25"/>
+                <supplied reason="discorso diretto" resp="#MZ"><pc>&quot;</pc></supplied>non scriverò mai più il diario<supplied reason="discorso diretto" resp="#MZ"><pc>&quot;</pc></supplied><pc>.</pc>
+                </ab>  
+            </div>
+            
+            <div type="pagina" facs="150" n="150">
+                <ab xml:id="quattrofebbraio">
+                <pb n="150" facs="150.jpg"/>
+                <lb xml:id="pag150_r1" n="1" facs="#p150_r1"/>
+                sotto i soldati sordi e grigi<pc>,</pc> come dice
+                <lb xml:id="pag150_r2" n="2" facs="#p150_r2"/>
+                <persName><surname>Mussolini</surname></persName><pc>,</pc> io nel mezzo<pc>,</pc> per fortuna
+                <lb xml:id="pag150_r3" n="3" facs="#p150_r3"/>
+                vado costituendo un’organizzazione
+                <lb xml:id="pag150_r4" n="4" facs="#p150_r4"/>
+                politica<pc>:</pc> Sam<pc>,</pc> <abbr type="person">G.</abbr><expan>G. (nome di persona)</expan><pc>,</pc> Ugo<pc>.</pc> Io ho l’orga<w rend="hyphen">=</w>
+                <lb xml:id="pag150_r5" n="5" facs="#p150_r5"/>
+                nizzazione che manca agli altri<pc>.</pc>
+                <lb xml:id="pag150_r6" n="6" facs="#p150_r6"/>
+                Posso mandare <persName><forename>Ugo</forename></persName> in un campo ad aiu<w rend="hyphen">=</w> 
+                <lb xml:id="pag150_r7" n="7" facs="#p150_r7"/>
+                tarmi<pc>,</pc> gli altri non possono mandare
+                <lb xml:id="pag150_r8" n="8" facs="#p150_r8"/>
+                uno a farmi la guerra<pc>.</pc> Se canticchiano
+                <lb xml:id="pag150_r9" n="9" facs="#p150_r9"/>
+                una canzone in cui dicono che se ne 
+                <lb xml:id="pag150_r10" n="10" facs="#p150_r10"/>
+                fregano del commissario<pc>,</pc> penso alla
+                <lb xml:id="pag150_r11" n="11" facs="#p150_r11"/>
+                poesia di <persName><surname>Brofferio</surname></persName> sul Magnific
+                <lb xml:id="pag150_r12" n="12" facs="#p150_r12"/>
+                Cunt d’Cavour <note resp="#MZ">Probabile riferimento ad una poesia scritta da Angelo Brofferio su Cavour, presumibilmente in piemontese</note> e mi consolo<pc>.</pc> Ho un 
+                <lb xml:id="pag150_r13" n="13" facs="#p150_r13"/>
+                mese circa davanti<pc>.</pc> Farò quanto posso<pc>.</pc>
+                </ab>   
+            </div>
+        </body>
+    </text>  
+    <standOff>
+        <listPerson>
+            <person xml:id="G">
+                <persName>G.</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom, in queste pagine sempre riportato in forma abbreviata<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="peru">
+                <persName>Peru</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="pina">
+                <persName>Pina</persName>
+                <sex value="F">Donna</sex>
+            </person>
+            <person xml:id="Fiamm">
+                <persName>Fiammetta</persName>
+                <sex value="F">Donna</sex>
+            </person>
+            <person xml:id="zanna">
+                <persName>Zama</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="anto">
+                <persName>Antonio</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="barba">
+                <persName>Barbato</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="Mussolini">
+                <persName>Mussolini</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Fondatore del fascismo, fu presidente del Consiglio del Regno d'Italia dal 31 ottobre 1922 al 25 luglio 1943<pc>.</pc> Nel gennaio del 1925 assunse poteri dittatoriali, instaurando un regime totalitario<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="sam">
+                <persName>Sam</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="ugo">
+                <persName>Ugo</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Partigiano compagno di Emanuele Artom<pc>.</pc>
+                </note>
+            </person> 
+            <person xml:id="brofferio">
+                <persName>Angelo Brofferio</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Angelo Brofferio è stato un poeta<pc>,</pc> politico e drammaturgo dell'800<pc>.</pc>
+                    Noto per il suo impegno politico nel Risorgimento e per le sue posizioni repubblicane<pc>,</pc> che lo portarono a criticare le politiche moderate e monarchiche di Cavour<pc>.</pc>
+                </note>
+            </person>
+            <person xml:id="cavour">
+                <persName>Cavour</persName>
+                <sex value="M">Uomo</sex>
+                <note>
+                    Camillo Benso di Cavour è stato un politico<pc>,</pc> patriota e imprenditore dell'800<pc>.</pc>
+                    Considerato uno dei principali artefici dell'unità d'Italia<pc>.</pc> Fu il primo Presidente del Consiglio del Regno d'Italia<pc>.</pc>
+                    Durante il Risorgimento si scontrò con Brofferio a proposito di diverse questioni politiche<pc>,</pc> data la loro divergenza ideologica<pc>.</pc>
+                </note>
+            </person>    
+        </listPerson>
+    </standOff>    
+</TEI>
+
